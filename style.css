@@ -1,0 +1,178 @@
+/*---------- CONTAINER ---------- */
+#container {
+	max-width: 600px;
+	height: 500px;
+	margin: 0 auto;
+	display: grid;
+	border: 1px solid #ccc;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 320px;) {
+  #container {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #container {
+    flex: 90%;
+  }
+}
+/* ---------- FIM CONTAINER ----------*/
+
+/*---------- AVATAR ----------*/
+.box {
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+}
+@media screen and (max-width: 1280px) and (min-width: 320px;) {
+  .box {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .box {
+    flex: 90%;
+  }
+}
+
+.box>*:nth-child(1) {
+	justify-content: flex-end;
+	align-self: center;
+    width: 60px;
+	height: 60px;
+	margin-top: 250px;
+	margin-left: 5px;
+	border-radius: 90px;
+    background-color: yellow;
+    animation:3s ease 0s normal forwards 1 fadein;
+    /*align-items: flex-end; bottom to top
+	justify-content: flex-end;*/
+}
+
+@media screen and (max-width: 1280px) and (min-width: 320px;) {
+  .box>*:nth-child(1){
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .box {
+    flex: 90%;
+  }
+}
+
+.box>*:nth-child(2) {
+	justify-content: flex-end;
+	align-self: center;
+	margin-left: 15px;
+    margin-top: 180px;
+    width: 70px;
+	height: 70px;
+	border-radius: 90px;
+    background-color: black;
+    animation:3s ease 0s normal forwards 1 fadein;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 320px;) {
+  .box>*:nth-child(2){
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .box {
+    flex: 90%;
+  }
+}
+
+.box *:nth-child(3) {
+	justify-content: flex-end;
+	align-self: center;
+    width: 60px;
+	height: 60px;
+	margin-left: 5px;
+	margin-top: 290px;
+	border-radius: 90px;
+    background-color: red;
+    animation:3s ease 0s normal forwards 1 fadein;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 320px;) {
+  .box>*:nth-child(3){
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .box {
+    flex: 90%;
+  }
+}
+/*---------- FIM AVATAR ---------- */
+
+/*---------- PODIO ---------- */
+.podio {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end; /*bottom to top*/
+	justify-content: flex-end; 
+}
+
+
+ @media screen and (max-width: 1280px) and (min-width: 320px;) {
+  .podio {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .podio {
+    flex: 90%;
+  }
+}
+
+/*---------- FIM PODIO ---------- */
+
+/*---------- ANIMAÇÃO ---------- */ 
+.podio img { animation: animacao 5s ease forwards alternate; 
+}
+
+@keyframes animacao {
+   from { 
+    height: 5px;
+  }
+   to { 
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 320px;) {
+  .podio img{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .podio {
+    flex: 90%;
+  }
+}
+/*---------- FIM PODIO ----------*/
+
+
+.box { animation: animacao 5s ease forwards;
+}
+
+
+@keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+
+/*---------- FIM ANIMAÇÃO ----------*/

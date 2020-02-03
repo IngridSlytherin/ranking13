@@ -55,6 +55,8 @@ body {
 	border-radius: 90px;
     background-color: yellow;
     animation:3s ease 0s normal forwards 1 fadein;
+    background-image: url("rachel.jpg");
+    background-size: cover;
     /*align-items: flex-end; bottom to top
 	justify-content: flex-end;*/
 }
@@ -81,6 +83,8 @@ body {
 	border-radius: 90px;
     background-color: white;
     animation:3s ease 0s normal forwards 1 fadein;
+    background-image: url("rachel.jpg");
+    background-size: cover;
 }
 
 @media screen and (max-width: 1280px) and (min-width: 320px;) {
@@ -105,6 +109,8 @@ body {
 	border-radius: 90px;
     background-color: red;
     animation:3s ease 0s normal forwards 1 fadein;
+    background-image: url("rachel.jpg");
+    background-size: cover;
 }
 
 @media screen and (max-width: 1280px) and (min-width: 320px;) {

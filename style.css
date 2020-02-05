@@ -8,15 +8,14 @@ body, html {
 /*---------- CONTAINER ---------- */
 #container {
   max-width: 100%;
- 
   height: 100%;
-
   margin: 0 auto;
   display: grid;
   border: 1px solid #ccc;
   justify-content: center;
   flex-wrap: wrap;
   background-image: url("medieval.gif");
+  background-size: cover;
 }
 
 @media screen and (max-width: 1280px) and (min-width: 320px;) {

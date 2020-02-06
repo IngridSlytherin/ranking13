@@ -18,17 +18,23 @@ body, html {
   background-size: cover;
 }
 
-@media screen and (max-width: 1280px) and (min-width: 320px;) {
+/* Desktop Styles */
+@media (min-width: 961px){
+  #container{
+    justify-content: center;
+  }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 425px) {
   #container {
-    flex: 50%;
+    /*visibility: hidden;*/
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 600px){
-  #container {
-    flex: 90%;
-  }
-}
+/* Tablet Styles*/ 
+
+
 /* ---------- FIM CONTAINER ----------*/
 
 /*---------- AVATAR ----------*/
@@ -37,100 +43,140 @@ body, html {
   align-items: flex-end;
   background-size: cover;
 }
-@media screen and (max-width: 1280px) and (min-width: 320px;) {
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
   .box {
-    flex: 50%;
+    align-items: flex-end;
+  }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  #container {
+    align-items: flex-end;
   }
 }
 
-@media screen and (max-width: 600px){
-  .box {
-    flex: 90%;
-  }
-}
+/* Tablet Styles */
+
 
 .box>*:nth-child(1) {
   justify-content: flex-end;
   align-self: center;
-    width: 60px;
+  width: 60px;
   height: 60px;
   margin-top: 250px;
   margin-left: 5px;
   border-radius: 90px;
-    background-color: yellow;
-    animation:3s ease 0s normal forwards 1 fadein;
-    background-image: url("rachel.jpg");
-    background-size: cover;
+  background-color: yellow;
+  animation:3s ease 0s normal forwards 1 fadein;
+  background-image: url("rachel.jpg");
+  background-size: cover;
     /*align-items: flex-end; bottom to top
   justify-content: flex-end;*/
 }
 
-@media screen and (max-width: 1280px) and (min-width: 320px;) {
-  .box>*:nth-child(1){
-    flex: 50%;
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .box>*:nth-child(1) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    margin-top: 610px;
   }
 }
 
-@media screen and (max-width: 600px){
-  .box {
-    flex: 90%;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .box>*:nth-child(1) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    /*margin-top: 320px;*/
   }
 }
+/* Tablet Styles */
 
 .box>*:nth-child(2) {
   justify-content: flex-end;
   align-self: center;
   margin-left: 15px;
-    margin-top: 180px;
-    width: 70px;
+  margin-top: 180px;
+  width: 70px;
   height: 70px;
   border-radius: 90px;
-    background-color: white;
-    animation:3s ease 0s normal forwards 1 fadein;
-    background-image: url("rachel.jpg");
-    background-size: cover;
+  background-color: white;
+  animation:3s ease 0s normal forwards 1 fadein;
+  background-image: url("rachel.jpg");
+  background-size: cover;
 }
-
-@media screen and (max-width: 1280px) and (min-width: 320px;) {
-  .box>*:nth-child(2){
-    flex: 50%;
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .box>*:nth-child(2) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    margin-top: 550px;
   }
 }
-
-@media screen and (max-width: 600px){
-  .box {
-    flex: 90%;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .box>*:nth-child(2) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    /*margin-top: 250px;*/
   }
 }
+/* Tablet Styles */
+
 
 .box *:nth-child(3) {
   justify-content: flex-end;
   align-self: center;
-    width: 60px;
+  width: 60px;
   height: 60px;
   margin-left: 5px;
   margin-top: 290px;
   border-radius: 90px;
-    background-color: red;
-    animation:3s ease 0s normal forwards 1 fadein;
-    background-image: url("rachel.jpg");
-    background-size: cover;
+  background-color: red;
+  animation:3s ease 0s normal forwards 1 fadein;
+  background-image: url("rachel.jpg");
+  background-size: cover;
 }
-
-@media screen and (max-width: 1280px) and (min-width: 320px;) {
-  .box>*:nth-child(3){
-    flex: 100%;
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .box>*:nth-child(3) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    margin-top: 670px;
   }
 }
 
-@media screen and (max-width: 600px){
-  .box {
-    flex: 90%;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .box>*:nth-child(3) {
+    justify-content: flex-end;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    /*margin-top: 355px;*/
   }
 }
+
+/* Tablet Styles */
+
+
+
 /*---------- FIM AVATAR ---------- */
 
 /*---------- PODIO ---------- */
+
 .podio {
   margin: 0 auto;
   display: flex;
@@ -139,18 +185,25 @@ body, html {
   justify-content: flex-end; 
 }
 
-
- @media screen and (max-width: 1280px) and (min-width: 320px;) {
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
   .podio {
-    flex: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 600px){
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
   .podio {
-    flex: 90%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
   }
 }
+/* Tablet Styles */
+
 
 /*---------- FIM PODIO ---------- */
 
@@ -167,17 +220,14 @@ body, html {
   }
 }
 
-@media screen and (max-width: 1280px) and (min-width: 320px;) {
-  .podio img{
-    flex: 50%;
-  }
-}
 
-@media screen and (max-width: 600px){
-  .podio {
-    flex: 90%;
-  }
-}
+/* Mobile Styles */
+
+/* Tablet Styles */
+
+/* Desktop Styles */
+
+
 /*---------- FIM PODIO ----------*/
 
 
@@ -189,6 +239,14 @@ body, html {
     0%{opacity:0}
     80%{opacity:0}
     100%{opacity:1}
+    {
+      size: 30px;
+    }
 
+
+/* Mobile Styles */
+
+/* Tablet Styles */
+
+/* Desktop Styles */
 /*---------- FIM ANIMAÇÃO ----------*/
-  

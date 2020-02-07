@@ -18,6 +18,14 @@ body, html {
   background-size: cover;
 }
 
+/* Landscape Styles */
+@media screen and (orientation: landscape) {
+  #container {
+    
+    height: 100%;
+  }
+  }
+
 /* Desktop Styles */
 @media (min-width: 961px){
   #container{

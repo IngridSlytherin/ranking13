@@ -14,11 +14,10 @@ body, html {
   border: 1px solid #ccc;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: url("medieval.gif");
-  background-size: cover;
+  /*background-image: url("medieval.gif");
+  background-size: cover;*/
 }
 
-/* Landscape Styles */
 @media screen and (orientation: landscape) {
   #container {
     
@@ -29,6 +28,7 @@ body, html {
 /* Desktop Styles */
 @media (min-width: 961px){
   #container{
+    /*visibility: hidden;*/
     justify-content: center;
   }
 }
@@ -188,6 +188,14 @@ body, html {
   align-items: flex-end; /*bottom to top*/
   justify-content: flex-end; 
 }
+
+@media screen and (orientation: landscape) {
+  .podio {
+    display: flex;
+    
+  }
+  }
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
